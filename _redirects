@@ -1,0 +1,27 @@
+# 구 WordPress 주소 → 정적 주소 (SEO·외부링크 보존)
+/index.php/bizmod/  /bizmod/  301
+/index.php/bunstep/  /bunstep/  301
+/index.php/cereal/  /cereal/  301
+/index.php/cheese/  /cheese/  301
+/index.php/chocolate/  /chocolate/  301
+/index.php/coffee/  /coffee/  301
+/index.php/contact/  /contact/  301
+/index.php/contactus/  /contactus/  301
+/index.php/cookie/  /cookie/  301
+/index.php/cream/  /cream/  301
+/index.php/currstep/  /currstep/  301
+/index.php/edustep/  /edustep/  301
+/index.php/eintro/  /eintro/  301
+/index.php/email_policy/  /email_policy/  301
+/index.php/franchisee/  /franchisee/  301
+/index.php/milkenglirb/  /milkenglirb/  301
+/index.php/milkeva/  /milkeva/  301
+/index.php/milklearning/  /milklearning/  301
+/index.php/milkonline/  /milkonline/  301
+/index.php/milkpad/  /milkpad/  301
+/index.php/milkrun/  /milkrun/  301
+/index.php/milkvision/  /milkvision/  301
+/index.php/privacy_policy/  /privacy_policy/  301
+/index.php/service_policy/  /service_policy/  301
+/index.php/support/  /support/  301
+/index.php/*  /:splat  301

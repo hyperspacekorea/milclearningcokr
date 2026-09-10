@@ -24,4 +24,6 @@
 /index.php/privacy_policy/  /privacy_policy/  301
 /index.php/service_policy/  /service_policy/  301
 /index.php/support/  /support/  301
+/index.php/notice/  /notice/  301
+/index.php/faq/  /faq/  301
 /index.php/*  /:splat  301

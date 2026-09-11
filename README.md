@@ -5,7 +5,7 @@
 
 - 원본: `http://www.milclearning.co.kr` (카페24 웹호스팅, PHP 5.5 + MySQL)
 - 전환일: 2026-09-10
-- 배포: Cloudflare Pages
+- 배포: GitHub Pages (`hyperspacekorea/milclearningcokr`, 커스텀 도메인 `www.milclearning.co.kr`)
 
 ## 왜 정적으로 전환했나
 
@@ -53,14 +53,14 @@
 
 `contact` · `contactus` 두 페이지에 있으며 Web3Forms 로 이메일 전달한다.
 
-- 수신: `drsongusa@yahoo.com` (주), `ceangel@readingtown.co.kr` (참조)
+- 수신: `drsongusa@yahoo.com` 한 곳 (Web3Forms 무료 플랜은 참조 발송(`ccemail`)이 Pro 전용이라 사용하지 않음)
 - 항목 11개는 기존 milcroom 폼과 동일 + **개인정보 수집 동의** 추가
 - ⚠️ `access_key` 값을 실제 키로 교체해야 동작한다 (https://web3forms.com 에서 이메일만 넣으면 즉시 발급)
 
 ## 콘텐츠 수정 방법
 
 정적 사이트이므로 관리자 화면이 없다. 공지 추가·내용 수정은 HTML 파일을 직접 고쳐
-커밋하면 Cloudflare Pages 가 자동 재배포한다.
+커밋·푸시하면 GitHub Pages 가 자동 재배포한다.
 
 ## 원본 보관
 

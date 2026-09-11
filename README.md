@@ -55,7 +55,7 @@
 
 - 수신: `drsongusa@yahoo.com` 한 곳 (Web3Forms 무료 플랜은 참조 발송(`ccemail`)이 Pro 전용이라 사용하지 않음)
 - 항목 11개는 기존 milcroom 폼과 동일 + **개인정보 수집 동의** 추가
-- ⚠️ `access_key` 값을 실제 키로 교체해야 동작한다 (https://web3forms.com 에서 이메일만 넣으면 즉시 발급)
+- `access_key` 적용 완료 (Web3Forms 계정 `help@suggestly.co.kr`, 폼 이름 「밀크러닝 가맹문의」). 이 키는 비밀값이 아니라 공개용 식별자다.
 
 ## 콘텐츠 수정 방법
 

@@ -29,6 +29,7 @@
 /faq/                  FAQ (스팸 게시글 3건 삭제, 현재 0건)
 /franchisee/           가맹점 찾기 (지역별 17 + 지점 상세)
 /contact/ /contactus/  오시는 길 + 가맹문의 폼
+/contact/thanks/       가맹문의 접수 완료 페이지 (폼 제출 후 이동, 검색 제외 noindex)
 /_redirects            구 WordPress 주소 → 현재 주소 301
 /wp-content/ …         원본 경로 그대로 보존한 에셋(CSS·JS·이미지·폰트)
 ```
@@ -56,6 +57,12 @@
 - 수신: `drsongusa@yahoo.com` 한 곳 (Web3Forms 무료 플랜은 참조 발송(`ccemail`)이 Pro 전용이라 사용하지 않음)
 - 항목 11개는 기존 milcroom 폼과 동일 + **개인정보 수집 동의** 추가
 - `access_key` 적용 완료 (Web3Forms 계정 `help@suggestly.co.kr`, 폼 이름 「밀크러닝 가맹문의」). 이 키는 비밀값이 아니라 공개용 식별자다.
+- 제출 후 이동: hidden `redirect` = `https://www.milclearning.co.kr/contact/thanks/`
+  (무료 플랜은 **같은 도메인만**, `https://` 절대주소 필수. 도메인이 바뀌면 이 값도 바꿔야 한다)
+- 수신 메일 표시: 보낸 사람 이름 `밀크러닝 홈페이지`(`from_name`), 주소는 Web3Forms 시스템 주소
+  `notify+…@web3forms.com`(변경은 Enterprise 전용). **답장(Reply-To)은 신청자가 입력한 E-MAIL** 로 간다.
+  스팸함 방지를 위해 수신자 주소록에 `notify@web3forms.com` 추가 권장.
+- 완료 페이지는 `rtmilc2/_dev/build/make_thanks_page.py` 로 `contact/index.html` 의 머리글·바닥글을 복제해 만든다.
 
 ## 콘텐츠 수정 방법
 

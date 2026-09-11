@@ -224,13 +224,14 @@ url('/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/asse
 <section class="av_textblock_section"  itemscope="itemscope" itemtype="https://schema.org/CreativeWork" ><div class='avia_textblock '   itemprop="text" ><div class="intrinsic-container">
 <p><!-- ===== 가맹문의 폼 (Web3Forms) — 기존 milcroom iframe 대체 =====
      제출 내용은 Web3Forms 를 거쳐 등록된 이메일로 전달된다.
-     ▶ 사용 전 access_key 값을 실제 키로 교체할 것 (https://web3forms.com 에서 이메일만 넣으면 즉시 발급)
+     ▶ access_key 는 Web3Forms 의 공개용 식별자다(비밀값 아님). 제출이 끝나면 redirect 값의 접수 완료 페이지로 이동한다.
 -->
 <div class="milc-inq">
   <form action="https://api.web3forms.com/submit" method="POST" class="milc-inq-form">
     <input type="hidden" name="access_key" value="75f4114e-1cb8-45ba-8ed0-b1a5acad6d08">
     <input type="hidden" name="subject" value="[밀크러닝] 가맹문의가 접수되었습니다">
     <input type="hidden" name="from_name" value="밀크러닝 홈페이지">
+    <input type="hidden" name="redirect" value="https://www.milclearning.co.kr/contact/thanks/">
     <!-- 스팸봇 함정: 사람은 비워두므로 값이 차 있으면 차단된다 -->
     <input type="checkbox" name="botcheck" class="milc-hp" style="display:none" tabindex="-1" autocomplete="off">
 
